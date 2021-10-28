@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>My Blog Template</title>
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+        }
+
+        p {
+            margin: 1rem 0;
+            line-height: 1.5rem;
+            margin: 10px 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header>h2 {
+            font-size: 36px;
+            font-weight: 550;
+        }
+
+        header>p>span {
+            background-color: black;
+            color: white;
+            padding: 0 .5rem;
+            display: inline-block;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .col1 {
+            flex: 2;
+            padding: 1rem;
+        }
+
+        .col1-top {
+            background-color: white;
+            margin-top: 2rem;
+        }
+
+        .col1-top-main {
+            padding: 1rem;
+        }
+
+        .col1-top-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 2rem;
+        }
+
+        .col1-top-footer-readmore {
+            border: 1px solid lightgrey;
+            text-decoration: none;
+            color: black;
+            padding: 12px 24px;
+        }
+
+        .tag {
+            background-color: black;
+            color: white;
+            padding: 0 .5rem;
+        }
+
+        .tag-round {
+            border-radius: 50%;
+        }
+
+        .col2 {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .col2-top {
+            margin-top: 2rem;
+            background-color: white;
+        }
+
+        .col2-top-main {
+            padding: 0 1rem 1rem;
+        }
+
+        .col2-top-main>h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .col2-middle {
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        .col2-middle-pp {
+            background-color: rgb(226, 226, 226);
+            padding: 18px 15px;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+
+        .col2-middle-post {
+            display: flex;
+            padding: 1rem;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .col2-middle-post:hover {
+            background-color: #ccc;
+        }
+
+        .col2-middle-ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .col2-middle-post-img {
+            margin-right: 1rem;
+        }
+
+        .col2-middle-post>div {
+            line-height: 1.5;
+        }
+
+        .col2-middle-post>div::first-line {
+            font-size: 1.2rem;
+        }
+
+        .col2-bottom {
+            background-color: white;
+        }
+
+        /*.col2-bottom-tags>span {}*/
+
+        .tag-secondary {
+            padding: 0 0.5rem;
+            font-size: .8rem;
+            line-height: 1.5;
+            display: inline-block;
+            margin-bottom: 1rem;
+            background-color: #f1f1f1
+        }
+
+        footer {
+            background-color: #616161;
+            padding: 2rem 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-button {
+            background-color: black;
+            color: white;
+            padding: 12px 24px;
+            margin: 1rem 0;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .footer-button.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .footer-button:hover {
+            color: black;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>MY BLOG</h2>
+            <p>Welcome to the blog of <span>unknown</span></p>
+        </header>
+        <main>
+            <div class="col1">
+                <div class="col1-top">
+                    <div><img src="https://picsum.photos/id/237/700/220" width="100%" alt=""></div>
+                    <div class="col1-top-main">
+                        <h2>TITLE HEADING</h2>
+                        <p>Title description, <span style="font-style: italic;">April 7, 2014</span></p>
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                            ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae
+                            justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <div class="col1-top-footer">
+                            <a href="#" class="col1-top-footer-readmore">READ MORE &raquo;</a>
+
+                            <div>
+                                Comments <span class="tag">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col1-top">
+                    <div><img src="https://picsum.photos/id/238/700/220" width="100%" alt=""></div>
+                    <div class="col1-top-main">
+                        <h2>TITLE HEADING</h2>
+                        <p>Title description, <span style="font-style: italic;">April 7, 2014</span></p>
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                            ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae
+                            justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <div class="col1-top-footer">
+                            <a href="#" class="col1-top-footer-readmore">READ MORE &raquo;</a>
+
+                            <div>
+                                Comments <span class="tag tag-round">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="col2-top">
+                    <img src="https://picsum.photos/id/239/400/250" width="100%" alt="">
+                    <div class="col2-top-main">
+                        <h4>My Name</h4>
+                        <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
+                            interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                    </div>
+                </div>
+                <div class="col2-middle">
+                    <div>
+                        <h2 class="col2-middle-pp">Popular Posts</h2>
+                    </div>
+                    <div>
+                        <ul class="col2-middle-ul">
+                            <li class="col2-middle-post">
+                                <img class="col2-middle-post-img" src="https://picsum.photos/id/240/300/300" width="50"
+                                    height="50" alt="">
+                                <div>
+                                    Lorem
+                                    <br>
+                                    Sed mattis nunc
+                                </div>
+                            </li>
+                            <li class="col2-middle-post">
+                                <img class="col2-middle-post-img" src="https://picsum.photos/id/241/300/300" width="50"
+                                    height="50" alt="">
+                                <div>
+                                    Ipsum
+                                    <br>
+                                    Praes tinci sed
+                                </div>
+                            </li>
+                            <li class="col2-middle-post">
+                                <img class="col2-middle-post-img" src="https://picsum.photos/id/242/300/300" width="50"
+                                    height="50" alt="">
+                                <div>
+                                    Dorum
+                                    <br>
+                                    Ultricies congue
+                                </div>
+                            </li>
+                            <li class="col2-middle-post" style="border-bottom: none;">
+                                <img class="col2-middle-post-img" src="https://picsum.photos/id/243/300/300" width="50"
+                                    height="50" alt="">
+                                <div>
+                                    Mingsum
+                                    <br>
+                                    Lorem ipsum dipsum
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col2-bottom">
+                    <div style="background-color: #e6e6e6; font-size: 1.3rem; padding: 1.2rem 1rem;">Tags</div>
+                    <div class="col2-bottom-tags" style="padding: 1rem 1rem;">
+                        <span class="tag">Travel</span>
+                        <span class="tag-secondary">New York</span>
+                        <span class="tag-secondary">London</span>
+                        <span class="tag-secondary">IKEA</span>
+                        <span class="tag-secondary">NORWAY</span>
+                        <span class="tag-secondary">DIY</span>
+                        <span class="tag-secondary">Ideas</span>
+                        <span class="tag-secondary">Baby</span>
+                        <span class="tag-secondary">Family</span>
+                        <span class="tag-secondary">New</span>
+                        <span class="tag-secondary">Clothing</span>
+                        <span class="tag-secondary">Shopping</span>
+                        <span class="tag-secondary">Sports</span>
+                        <span class="tag-secondary">Games</span>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="#" class="footer-button disabled">Previous</a>
+            <a href="#" class="footer-button">Next &raquo;</a>
+            <p style="color: white;">Powered by <a href="https://w3schools.com" style="color: white;">w3schools</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
